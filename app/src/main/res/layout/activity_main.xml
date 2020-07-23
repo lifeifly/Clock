@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.coolweather.clock.ClockView
+                <com.example.clock1.ClockView
                     android:id="@+id/tabClock"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -39,15 +39,26 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:textAppearance="?android:attr/textAppearanceLarge"/>
-                </com.coolweather.clock.ClockView>
+                </com.example.clock1.ClockView>
 
-                <LinearLayout
+                <com.example.clock1.AlarmView
                     android:id="@+id/tabAlarm"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+                    <ListView
+                        android:layout_weight="1"
+                        android:id="@+id/lvalarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
 
-                </LinearLayout>
+                    </ListView>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAddAlarm"
+                        android:text="添加闹钟"/>
+                </com.example.clock1.AlarmView>
 
                 <LinearLayout
                     android:id="@+id/tabTimer"
